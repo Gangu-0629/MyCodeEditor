@@ -1,0 +1,181 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	overflow-x: hidden;
+}
+:root {
+	--col1:#35155D;
+	--col2:#512B81;
+	--col3:#4477CE;
+	--col4:#8CABFF;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--col4);
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	justify-content: center;
+	padding: 20px;
+	padding-top: 0;
+	
+}
+
+.editcont {
+	height: 100vh;
+	width: 60vw;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.editcont button {
+	position: relative;
+	width: 80px;
+	height: 40px;
+	left: 90%;
+	border-radius: 10px;
+	transform: translate(-100%);
+	background-color: var(--col3);
+	color: white;
+}
+.editcont button:hover{
+	scale: 1.05;
+	background-color: green;
+	color: black;
+}
+.iocont {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 35vw;
+	height: 100vh;
+}
+
+.iocont h4 {
+	font-size: 30px;
+
+}
+
+.iocont .input-box {
+	width: 100%;
+	height: 40%;
+	border: 2px solid black;
+}
+
+.iocont .output-box {
+	width: 100%;
+	height: 40%;
+	border: 2px solid black;
+	color: white;
+	background-color: white;
+}	
+.iocont .spinner-box{
+	width: 100%;
+	height: 40%;
+	border: 2px solid black;
+	color: white;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.iocont .output-box button {
+	position: relative;
+	top: 90%;
+	left: 95%;
+	background-color: var(--col3);
+	width: 70px;
+	height: 40px;
+	border-radius: 10px;
+	transform: translate(-100%, -100%);
+}
+.iocont .output-box button:hover{
+	background-color: red;
+	scale: 1.05;
+	color: black;
+}
+#code-inp {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	
+	color: white;
+}
+
+.navbar {
+	width: 100vw;
+	display: flex;
+	gap: 1%;
+	padding: 10px;
+	padding-left: 10%;
+	align-items: center;
+	background-color: var(--col3);
+}
+
+@media screen and (orientation: portrait) {
+	.main {
+		flex-direction: column;
+	}
+
+	.editcont {
+		height: 100vh;
+		width: 100vw;
+	}
+
+	.iocont {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.iocont h4 {
+		font-size: 30px;
+
+	}
+
+	.iocont .input-box {
+		margin: 10px;
+		width: 100%;
+		height: 40%;
+	}
+
+	.iocont .output-box {
+		margin: 10px;
+		width: 100%;
+		height: 40%;
+		background-color: blue;
+
+	}
+
+	.iocont .output-box button {
+		position: relative;
+		top: 90%;
+		left: 95%;
+		width: 70px;
+		height: 40px;
+		border-radius: 10px;
+		transform: translate(-100%, -100%);
+	}
+
+	#code-inp {
+		width: 100%;
+		height: 100%;
+		border: 0;
+		background-color: black;
+		color: white;
+	}
+}
